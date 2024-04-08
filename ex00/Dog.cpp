@@ -3,10 +3,12 @@
 
 //Constructor
 Dog::Dog(): Animal("Dog") {
+	std::cout << "Dog spawned" << std::endl;
 }
 
 //Destructor
 Dog::~Dog() {
+	std::cout << "Dog destroyed" << std::endl;
 }
 
 //Copy-Constructor

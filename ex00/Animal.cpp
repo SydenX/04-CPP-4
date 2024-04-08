@@ -3,14 +3,17 @@
 
 //Constructor
 Animal::Animal() {
+	std::cout << "Animal spawned" << std::endl;
 }
 
 Animal::Animal(std::string type) {
+	std::cout << "Animal of type " << type << " spawned" << std::endl;
 	this->type = type;
 }
 
 //Destructor
 Animal::~Animal() {
+	std::cout << "Animal destroyed" << std::endl;
 }
 
 //Copy-Constructor
