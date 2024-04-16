@@ -6,7 +6,7 @@
 #    By: jtollena <jtollena@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/01/02 23:04:50 by lolemmen          #+#    #+#              #
-#    Updated: 2024/04/08 11:40:43 by jtollena         ###   ########.fr        #
+#    Updated: 2024/04/16 11:44:08 by jtollena         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -35,8 +35,7 @@ SRC = \
 	 Animal.cpp \
 	 Cat.cpp \
 	 Dog.cpp \
-	 WrongAnimal.cpp \
-	 WrongCat.cpp \
+	 Brain.cpp \
 	 main.cpp
 	 
 # **************************************************************************** #
