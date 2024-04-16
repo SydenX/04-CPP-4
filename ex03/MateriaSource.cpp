@@ -9,6 +9,10 @@ MateriaSource::MateriaSource() {
 
 //Destructor
 MateriaSource::~MateriaSource() {
+	for (int i = 0; i < 4; i++){
+		delete this->_slots[i];
+		this->_slots[i] = NULL;
+	}
 }
 
 //Copy-Constructor
@@ -18,7 +22,10 @@ MateriaSource::MateriaSource(MateriaSource const &materiasource) {
 
 //Copy-Assignment Operator Overload
 MateriaSource&	MateriaSource::operator=(MateriaSource const &materiasource){
-
+	for (int i = 0; i < 4; i++){
+		delete this->_slots[i];
+		this->_slots[i] = materiasource._slots[i];
+	}
 	return *this;
 }
 

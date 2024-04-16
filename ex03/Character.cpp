@@ -28,13 +28,12 @@ Character::Character(Character const &character) {
 
 //Copy-Assignment Operator Overload
 Character&	Character::operator=(Character const &character){
+	this->_name = character._name;
 	for (int i = 0; i < 4; i++){
 		delete this->_slots[i];
-		this->_slots[i] = NULL;
+		if (character._slots[i] != NULL) this->_slots[i] = character._slots[i]->clone(); //Deep
+		else this->_slots[i] = NULL;
 	}
-	this->_name = character._name;
-	for (int i = 0; i < 4; i++)
-		this->_slots[i] = character._slots[i]->clone(); //Deep
 	return *this;
 }
 
