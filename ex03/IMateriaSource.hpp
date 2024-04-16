@@ -3,15 +3,14 @@
 # define IMATERIASOURCE_HPP
 
 #include <iostream>
+#include "AMateria.hpp"
 
-class IMateriaSource {
-	private:
-		
+class IMateriaSource
+{
 	public:
-		IMateriaSource();
-		~IMateriaSource();
-		IMateriaSource(IMateriaSource const &imateriasource);
-		IMateriaSource& 	operator=(IMateriaSource const&);
+		virtual ~IMateriaSource() {}
+		virtual void learnMateria(AMateria*) = 0;
+		virtual AMateria* createMateria(std::string const & type) = 0;
 };
 
 #endif

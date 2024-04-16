@@ -5,12 +5,14 @@
 #include <iostream>
 #include "ICharacter.hpp"
 
+class ICharacter;
+
 class AMateria {
 	private:
 		std::string	_type;
 	public:
 		AMateria();
-		~AMateria();
+		virtual ~AMateria();
 		AMateria(AMateria const &amateria);
 		AMateria(std::string const & type);
 		std::string const & getType() const; //Returns the materia type
