@@ -6,7 +6,7 @@
 #    By: jtollena <jtollena@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/01/02 23:04:50 by lolemmen          #+#    #+#              #
-#    Updated: 2024/04/16 13:32:21 by jtollena         ###   ########.fr        #
+#    Updated: 2024/04/17 11:22:57 by jtollena         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -19,7 +19,7 @@ NAME = polymorph
 
 RM = rm -rf
 CC = c++
-CFLAGS = -std=c++98 #-Wall -Werror -Wextra -Wno-shadow
+CFLAGS = -std=c++98 -Wall -Werror -Wextra -Wno-shadow
 
 # Directories
 

@@ -18,7 +18,7 @@ Dog::Dog(Dog const &dog) {
 
 //Copy-Assignment Operator Overload
 Dog&	Dog::operator=(Dog const &dog){
-
+	this->type = dog.type;
 	return *this;
 }
 

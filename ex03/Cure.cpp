@@ -16,7 +16,7 @@ Cure::Cure(Cure const &cure) {
 
 //Copy-Assignment Operator Overload
 Cure&	Cure::operator=(Cure const &cure){
-
+	this->_type = cure.getType();
 	return *this;
 }
 

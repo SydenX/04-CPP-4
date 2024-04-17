@@ -16,7 +16,7 @@ Ice::Ice(Ice const &ice) {
 
 //Copy-Assignment Operator Overload
 Ice&	Ice::operator=(Ice const &ice){
-
+	this->_type = ice.getType();
 	return *this;
 }
 

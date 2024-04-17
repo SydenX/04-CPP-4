@@ -20,7 +20,7 @@ AMateria::AMateria(AMateria const &amateria) {
 
 //Copy-Assignment Operator Overload
 AMateria&	AMateria::operator=(AMateria const &amateria){
-
+	this->_type = amateria.getType();
 	return *this;
 }
 

@@ -23,7 +23,7 @@ WrongAnimal::WrongAnimal(WrongAnimal const &wrongAnimal) {
 
 //Copy-Assignment Operator Overload
 WrongAnimal&	WrongAnimal::operator=(WrongAnimal const &wrongAnimal){
-
+	this->type = wrongAnimal.getType();
 	return *this;
 }
 

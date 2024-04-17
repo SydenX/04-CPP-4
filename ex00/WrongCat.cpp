@@ -18,7 +18,7 @@ WrongCat::WrongCat(WrongCat const &wrongCat) {
 
 //Copy-Assignment Operator Overload
 WrongCat&	WrongCat::operator=(WrongCat const &wrongCat){
-
+	this->type = wrongCat.type;
 	return *this;
 }
 
